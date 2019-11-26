@@ -47,6 +47,6 @@ RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
 RUN \
   cd PYX-Reloaded && \
   sudo mvn clean package && \
-  sudo java -jar $HOME/PYX-Reloaded/target/PYX-Reloaded-jar-with-dependencies.jar
+  sudo javac -jar $HOME/PYX-Reloaded/target/PYX-Reloaded-jar-with-dependencies.jar
   
 CMD tail -f /dev/null

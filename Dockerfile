@@ -37,4 +37,4 @@ RUN apt-get install maven -y
 
 RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
 RUN cd PYX-Reloaded
-RUN java -jar $HOME/PYX-Reloaded/target/PYX-jar-with-dependencies.jar
+RUN sudo java -jar $HOME/PYX-Reloaded/target/PYX-jar-with-dependencies.jar

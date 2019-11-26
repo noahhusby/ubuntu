@@ -40,6 +40,9 @@ RUN sudo apt-get update
 
 RUN sudo apt-get install openjdk-8-jdk -y
 
+RUN sudo rm -rf /usr/lib/jvm/java-1.7.0-openjdk-amd64 && \
+  sudo rm -rf java-7-openjdk-amd64
+
 RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
 RUN \
   cd PYX-Reloaded && \

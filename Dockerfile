@@ -45,9 +45,6 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 
 RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
 EXPOSE 80
-RUN \
-  cd PYX-Reloaded && \
-  sudo mvn clean package
   
 RUN chmod +x /root/run.sh 
 CMD /root/run.sh

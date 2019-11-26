@@ -42,5 +42,5 @@ RUN sudo apt-get install openjdk-8-jdk -y
 
 RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
 RUN cd PYX-Reloaded
-RUN mvn clean package
+RUN mvn clean package /PYX-Reloaded/pom.xml
 RUN sudo java -jar $HOME/PYX-Reloaded/target/PYX-jar-with-dependencies.jar

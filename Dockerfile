@@ -31,7 +31,7 @@ WORKDIR /root
 # Define default command.
 CMD ["bash"]
 
-RUN sudo apt install maven
+RUN apt-get install maven
 
 RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
 RUN cd PYX-Reloaded

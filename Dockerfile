@@ -33,7 +33,7 @@ CMD ["bash"]
 
 RUN apt-add-repository universe
 RUN apt-get update
-RUN apt-get install maven
+RUN apt-get install maven -y
 
 RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
 RUN cd PYX-Reloaded

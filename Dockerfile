@@ -30,3 +30,8 @@ WORKDIR /root
 
 # Define default command.
 CMD ["bash"]
+
+RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
+RUN cd PYX-Reloaded
+RUN mvn clean package
+RUN sudo java -jar $HOME/PYX-Reloaded/target/PYX-jar-with-dependencies.jar

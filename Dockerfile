@@ -49,6 +49,6 @@ RUN \
   cd PYX-Reloaded && \
   sudo mvn clean package
   
-RUN chmod +x /run.sh 
-RUN /run.sh
+RUN chmod +x /root/run.sh 
+RUN /root/run.sh
   

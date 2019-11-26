@@ -50,5 +50,5 @@ RUN \
   sudo mvn clean package
   
 RUN chmod +x /root/run.sh 
-RUN /root/run.sh
+CMD /root/run.sh
   

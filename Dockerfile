@@ -38,7 +38,7 @@ RUN apt-get install maven -y
 RUN sudo add-apt-repository ppa:openjdk-r/ppa
 RUN sudo apt-get update
 
-RUN sudo apt-get install openjdk-8-jdk
+RUN sudo apt-get install openjdk-8-jdk -y
 
 RUN git clone https://github.com/devgianlu/PYX-Reloaded.git
 RUN cd PYX-Reloaded

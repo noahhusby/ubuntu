@@ -21,6 +21,7 @@ RUN \
 ADD root/.bashrc /root/.bashrc
 ADD root/.gitconfig /root/.gitconfig
 ADD root/.scripts /root/.scripts
+ADD root/run.sh /root/run.sh
 
 # Set environment variables.
 ENV HOME /root
@@ -47,5 +48,5 @@ EXPOSE 80
 RUN \
   cd PYX-Reloaded && \
   sudo mvn clean package
-CMD ["/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java", "-jar", "$HOME/PYX-Reloaded/target/PYX-Reloaded-jar-with-dependencies.jar"]
+CMD /root/run.sh
   

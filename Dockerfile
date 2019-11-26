@@ -48,5 +48,7 @@ EXPOSE 80
 RUN \
   cd PYX-Reloaded && \
   sudo mvn clean package
-CMD ["sudo", "\run.sh\"]
+  
+RUN chmod +x /run.sh 
+RUN /run.sh
   

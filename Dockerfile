@@ -39,6 +39,7 @@ RUN apt-get install maven -y
 RUN sudo add-apt-repository ppa:openjdk-r/ppa
 RUN sudo apt-get update
 
+RUN sudo apt-get install openjdk-8-jdk -y
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 
